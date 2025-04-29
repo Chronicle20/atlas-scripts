@@ -1,6 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 
-BASE_URL="git@gh-chronicle20:chronicle20"
 REPOS="
 atlas-account
 atlas-buddies
@@ -44,17 +43,20 @@ atlas-ui
 atlas-world
 generator-atlas-ms
 "
-ORIGINAL_DIR="$(pwd)"
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-cd "$SCRIPT_DIR/.." || exit 1
 
-for repo in $REPOS; do
-  if [ -d "$repo" ]; then
-    echo "Skipping $repo - directory already exists."
-  else
-    echo "Cloning $repo..."
-    git clone "$BASE_URL/$repo"
-  fi
+if [ -z "$1" ]; then
+  echo "Usage: $0 <action-script.sh>"
+  exit 1
+fi
+
+ACTION_SCRIPT="$1"
+
+if [ ! -x "$ACTION_SCRIPT" ]; then
+  echo "Error: Action script '$ACTION_SCRIPT' is not executable."
+  exit 1
+fi
+
+for repo in "${REPOS[@]}"; do
+  echo "Applying $ACTION_SCRIPT to $repo..."
+  ./"$ACTION_SCRIPT" "$repo"
 done
-
-cd "$ORIGINAL_DIR" || exit 1
