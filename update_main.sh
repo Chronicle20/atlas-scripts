@@ -9,8 +9,9 @@ if [ ! -d "$REPO_NAME" ]; then
   echo "Skipping $REPO_NAME (does not exists)"
 else
   cd "$REPO_NAME"
-  git config user.name Chronicle20
-  git config user.email a.chronicle.20@gmail.com
+  git switch main
+  git fetch
+  git pull
 fi
 
 cd "$ORIGINAL_DIR"

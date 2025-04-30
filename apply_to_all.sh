@@ -56,7 +56,7 @@ if [ ! -x "$ACTION_SCRIPT" ]; then
   exit 1
 fi
 
-for repo in "${REPOS[@]}"; do
+for repo in $REPOS; do
   echo "Applying $ACTION_SCRIPT to $repo..."
   ./"$ACTION_SCRIPT" "$repo"
 done
