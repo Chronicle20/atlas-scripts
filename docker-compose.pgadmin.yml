@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-admin@admin.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+    ports:
+      - "4000:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+volumes:
+  pgadmin_data:
