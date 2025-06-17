@@ -30,6 +30,7 @@ atlas-messengers
 atlas-model
 atlas-monster-death
 atlas-monsters
+atlas-notes
 atlas-npc-conversations
 atlas-parties
 atlas-pets
