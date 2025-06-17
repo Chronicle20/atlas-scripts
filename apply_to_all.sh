@@ -23,6 +23,7 @@ atlas-guilds
 atlas-inventory
 atlas-invites
 atlas-kafka
+atlas-keys
 atlas-login
 atlas-maps
 atlas-messages
@@ -32,6 +33,7 @@ atlas-monster-death
 atlas-monsters
 atlas-notes
 atlas-npc-conversations
+atlas-npc-shops
 atlas-parties
 atlas-pets
 atlas-portals
