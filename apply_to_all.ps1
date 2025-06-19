@@ -8,6 +8,7 @@ $Repos = @(
     "atlas-channel",
     "atlas-character",
     "atlas-character-factory",
+	"atlas-compartment-transfer",
     "atlas-configurations",
     "atlas-constants",
     "atlas-consumables",
@@ -40,6 +41,7 @@ $Repos = @(
     "atlas-skills",
     "atlas-socket",
     "atlas-tenant",
+	"atlas-transports",
     "atlas-ui",
     "atlas-world",
     "generator-atlas-ms"

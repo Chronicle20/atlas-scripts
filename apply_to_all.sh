@@ -10,6 +10,7 @@ atlas-chalkboards
 atlas-channel
 atlas-character
 atlas-character-factory
+atlas-compartment-transfer
 atlas-configurations
 atlas-constants
 atlas-consumables
@@ -42,6 +43,7 @@ atlas-rest
 atlas-skills
 atlas-socket
 atlas-tenant
+atlas-transports
 atlas-ui
 atlas-world
 generator-atlas-ms
