@@ -35,14 +35,17 @@ atlas-monsters
 atlas-notes
 atlas-npc-conversations
 atlas-npc-shops
+atlas-query-aggregator
 atlas-parties
 atlas-pets
 atlas-portals
 atlas-reactors
 atlas-rest
+atlas-saga-orchestrator
 atlas-skills
 atlas-socket
 atlas-tenant
+atlas-tenants
 atlas-transports
 atlas-ui
 atlas-world
