@@ -20,6 +20,7 @@ atlas-drops
 atlas-equipables
 atlas-expressions
 atlas-fame
+atlas-families
 atlas-guilds
 atlas-inventory
 atlas-invites
@@ -27,6 +28,7 @@ atlas-kafka
 atlas-keys
 atlas-login
 atlas-maps
+atlas-marriages
 atlas-messages
 atlas-messengers
 atlas-model
